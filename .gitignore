@@ -1,0 +1,75 @@
+# -----------------------------
+# Python cache & build files
+# -----------------------------
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.pkl
+*.joblib
+*.sqlite
+*.log
+
+# Virtual environments
+venv/
+.env/
+.venv/
+env/
+ENV/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# -----------------------------
+# OS-specific files
+# -----------------------------
+# Windows
+Thumbs.db
+Desktop.ini
+
+# macOS (in case you share the repo)
+.DS_Store
+
+# -----------------------------
+# Model artifacts
+# -----------------------------
+models/
+*.bin
+*.pt
+*.pth
+*.onnx
+
+# HuggingFace cache (very large)
+# If you want to keep models local, you can remove this line.
+huggingface/
+.cache/huggingface/
+
+# Transformers fine-tuning output directories
+checkpoint*/
+runs/
+
+# -----------------------------
+# Data files (large datasets)
+# -----------------------------
+# Keep your dataset OUT of git. It's large and shouldn’t be versioned.
+data/*
+!data/.gitkeep   # Keep the folder itself tracked
+
+# If you want to push small example data files to git, manually remove these rules.
+
+# -----------------------------
+# Environment & secret files
+# -----------------------------
+*.env
+.env.*
+*.credentials
+*.key
+*.token
+
+# -----------------------------
+# Packaging
+# -----------------------------
+dist/
+build/
+*.egg-info/
